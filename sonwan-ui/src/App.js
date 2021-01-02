@@ -46,19 +46,119 @@ export default function App() {
 function Home() {
   return (
     <>
-      <Input placeholder="Search In Codesandbox" />
-      <Card>
-        <CardItem
-          title="Yuzuha Usagi"
-          subtitle="0821 - 7654 - 3210"
+     <Card>
+  <div className="opacity-50 my-1 text-black dark:text-white">
+    Recent Contacts
+  </div>
+  <CardItem
+    title="Samantha"
+    className="py-4"
+    subtitle="Bank - 0987 3422 8756"
+    avatar={
+      <img
+        src="https://randomuser.me/api/portraits/women/17.jpg"
+        className="rounded-full"
+      />
+    }
+  />
+  <CardItem
+    title="Karen William"
+    className="py-4"
+    subtitle="Bank - 0987 3422 8756"
+    avatar={
+      <img
+        src="https://randomuser.me/api/portraits/women/2.jpg"
+        className="rounded-full"
+      />
+    }
+  />
+  <CardItem
+    title="Angela Smith"
+    className="py-4"
+    subtitle="Bank - 0987 3422 8756"
+    avatar={
+      <img
+        src="https://randomuser.me/api/portraits/women/8.jpg"
+        className="rounded-full"
+      />
+    }
+  />
+  </Card>
+  <div className="dark">
+  <Card>
+    <div className="opacity-50 my-1 text-black dark:text-white">
+      Recent Contacts
+    </div>
+    <CardItem
+      title="Samantha"
+      className="py-4"
+      subtitle="Bank - 0987 3422 8756"
+      avatar={
+        <img
+          src="https://randomuser.me/api/portraits/women/17.jpg"
+          className="rounded-full"
         />
-      </Card>
+      }
+    />
+    <CardItem
+      title="Karen William"
+      className="py-4"
+      subtitle="Bank - 0987 3422 8756"
+      avatar={
+        <img
+          src="https://randomuser.me/api/portraits/women/2.jpg"
+          className="rounded-full"
+        />
+      }
+    />
+    <CardItem
+      title="Angela Smith"
+      className="py-4"
+      subtitle="Bank - 0987 3422 8756"
+      avatar={
+        <img
+          src="https://randomuser.me/api/portraits/women/8.jpg"
+          className="rounded-full"
+        />
+      }
+    />
+  </Card>  
+</div> 
     </>
   )
 }
 
 function About() {
-  return <h2>About</h2>;
+  return (
+    <div>
+    <Card>
+  <CardItem
+    title="Bambang Eko"
+    subtitle="0821 - 7654 - 3210"
+    avatar={
+      <img
+        src="https://randomuser.me/api/portraits/men/19.jpg"
+        className="rounded"
+      />
+    }
+  />
+</Card>
+<div className="dark">
+  <Card>
+    <CardItem
+      title="Putri Saputri"
+      subtitle="0821 - 7654 - 3210"
+      avatar={
+        <img
+          src="https://randomuser.me/api/portraits/women/1.jpg"
+          className="rounded"
+        />
+      }
+    />
+  </Card>
+</div>      
+</div>
+  );
 }
 
 function Topics() {
