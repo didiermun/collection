@@ -7,6 +7,14 @@ const fastify = require('fastify')({
   fastify.get('/', async (request, reply) => {
     return { hello: 'world' }
   })
+
+  // Require external modules
+const mongoose = require('mongoose')
+
+// Connect to DB
+mongoose.connect('mongodb://localhost/mycargarage')
+ .then(() => console.log('MongoDB connected…'))
+ .catch(err => console.log(err))
   
   // Run the server!
   const start = async () => {
