@@ -1,4 +1,6 @@
 import React from "react";
+import "sonwan-ui/build/style.min.css";
+import SonWan from "sonwan-ui";
 import {
   BrowserRouter as Router,
   Switch,
