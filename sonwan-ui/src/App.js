@@ -9,6 +9,7 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+const { Input, Card, CardItem, ListItem } = SonWan;
 
 export default function App() {
   return (
@@ -43,7 +44,17 @@ export default function App() {
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return (
+    <>
+      <Input placeholder="Search In Codesandbox" />
+      <Card>
+        <CardItem
+          title="Yuzuha Usagi"
+          subtitle="0821 - 7654 - 3210"
+        />
+      </Card>
+    </>
+  )
 }
 
 function About() {
