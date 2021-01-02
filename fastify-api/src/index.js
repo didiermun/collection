@@ -11,13 +11,7 @@ const fastify = require('fastify')({
   // Require external modules
 const mongoose = require('mongoose')
 
-// Connect to DB
-mongoose.connect('mongodb://localhost/mycargarage')
- .then(() => console.log('MongoDB connected…'))
- .catch(err => console.log(err))
-  
-  // Run the server!
-  const start = async () => {
+const start = async () => {
     try {
       await fastify.listen(3000)
       fastify.log.info(`server listening on ${fastify.server.address().port}`)
@@ -26,4 +20,14 @@ mongoose.connect('mongodb://localhost/mycargarage')
       process.exit(1)
     }
   }
+// Connect to DB
+mongoose.connect('mongodb://localhost/myapp',{ 
+    useUnifiedTopology: true,
+    useNewUrlParser: true
+} )
+ .then(() => {
+     console.log('MongoDB connected…')
   start()
+
+    })
+ .catch(err => console.log(err))
