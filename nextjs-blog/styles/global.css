@@ -27,4 +27,16 @@ img {
 }
 h3{
     text-transform: capitalize;
+    color: rgb(5, 157, 168);
+}
+p{
+    color: rgb(79, 82, 79);
+}
+div div{
+    background-color: rgb(250, 249, 245);
+    width: 50%;
+}
+
+div div p,h3{
+    text-align: center;
 }
