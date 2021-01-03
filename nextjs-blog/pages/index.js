@@ -1,37 +1,25 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import { getSortedPostsData } from '../lib/posts'
+import {useEffect} from "react"
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const res = await fetch("http://jsonplaceholder.typicode.com/posts");
+  const posts = await res.json()
   return {
     props: {
-      allPostsData
+      posts
     }
   }
 }
-export default function Home({ allPostsData }) {
+export default function Home({ posts }) {
+  useEffect(()=>{
+    console.log(posts)
+  })
   return (
     <Layout home>
-      {/* Keep the existing code here */}
-
-      {/* Add this <section> tag below the existing <section> tag */}
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              {title}
-              <br />
-              {id}
-              <br />
-              {date}
-            </li>
-          ))}
-        </ul>
-      </section>
+     <h2>Posts</h2>
+    { posts.map((post)=>(<div><h3>{post.title}</h3></div>))}
     </Layout>
   )
 }
