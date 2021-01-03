@@ -19,7 +19,12 @@ export default function Home({ posts }) {
   return (
     <Layout home>
      <h2>Posts</h2>
-    { posts.map((post)=>(<div><h3>{post.title}</h3></div>))}
+    { posts.map((post)=>(
+    <div>
+      <h3>{post.title}</h3>
+      <p>{post.body}</p>
+      </div>
+      ))}
     </Layout>
   )
 }
