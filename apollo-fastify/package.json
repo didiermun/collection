@@ -5,6 +5,7 @@
   "author": "Didier Munezero",
   "license": "MIT",
   "dependencies": {
-    "apollo-server-fastify": "^2.19.1"
+    "apollo-server-fastify": "^2.19.1",
+    "fast-json-stringify": "^2.3.0"
   }
 }
