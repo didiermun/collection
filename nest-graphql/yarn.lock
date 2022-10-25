@@ -1242,10 +1242,10 @@
   resolved "https://registry.yarnpkg.com/@nestjs/mapped-types/-/mapped-types-0.1.1.tgz#2fa9ff0f1ddbe66d5d1c80ae59df21c0ed0d1361"
   integrity sha512-FROYmmZ2F+tLJP/aHasPMX40iUHQPtEAzOAcfAp21baebN5iLUrdyTuphoXjIqubfPFSwtnAGpVm9kLJjQ//ig==
 
-"@nestjs/mongoose@^7.2.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/mongoose/-/mongoose-7.2.0.tgz#173528803055c48d58ff3531630bb57464131890"
-  integrity sha512-EYlY/MPcVz9t5gWt1Gz0/wGi0m6BqeNuVw548P7glOqguCKE+Qy/tI/RTJX0Fo9PnSnF4dj3dOWkfDwT237vSg==
+"@nestjs/mongoose@7.2.4":
+  version "7.2.4"
+  resolved "https://registry.yarnpkg.com/@nestjs/mongoose/-/mongoose-7.2.4.tgz#60a50532a244279703344368d74ecd802aeda4a4"
+  integrity sha512-NTE/IwijFUEJytPHLoHRYe0X5p16W1Awf8tm6I3mWsIUuBnSDfMyN0fy30uVaM/exYvCkMwEsAVpeSeKVPMHxg==
 
 "@nestjs/platform-express@^7.5.1":
   version "7.6.5"
