@@ -1,15 +1,15 @@
 {
   "dependencies": {
-    "boom": "^7.3.0",
-    "fastify": "^3.9.2",
-    "fastify-swagger": "^3.5.0",
-    "mongoose": "^5.11.9"
+    "boom": "7.3.0",
+    "fastify": "3.9.2",
+    "fastify-swagger": "3.5.0",
+    "mongoose": "5.11.9"
   },
   "scripts": {
     "start": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "2.0.6"
   }
 }
