@@ -1,2 +1,2 @@
-# Temps
+# Collection
 Web development framework collection
