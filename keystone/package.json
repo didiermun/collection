@@ -22,7 +22,7 @@
     "@keystonejs/app-graphql": "^6.2.0",
     "@keystonejs/auth-password": "^6.0.0",
     "@keystonejs/fields": "^22.0.0",
-    "@keystonejs/keystone": "^18.0.0",
+    "@keystonejs/keystone": "^19.0.0",
     "cross-env": "^7.0.3"
   }
 }
