@@ -1,2 +1,2 @@
 # Temps
-Templates while studying
+Web development framework collection
