@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "apollo-server-fastify": "^2.19.1",
-    "fast-json-stringify": "^2.3.0",
+    "fast-json-stringify": "^5.0.0",
     "fastify": "^3.9.2"
   }
 }
