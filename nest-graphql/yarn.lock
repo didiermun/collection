@@ -2251,9 +2251,7 @@ apollo-server-errors@^2.4.2:
   integrity sha512-FeGxW3Batn6sUtX3OVVUm7o56EgjxDlmgpTLNyWcLb0j6P8mw9oLNyAm3B+deHA4KNdNHO5BmHS2g1SJYjqPCQ==
 
 apollo-server-express@^2.19.1:
-  version "2.19.1"
-  resolved "https://registry.yarnpkg.com/apollo-server-express/-/apollo-server-express-2.19.1.tgz#7076ec97d263688563c07ceb5ea55e3fb8437069"
-  integrity sha512-PJQmPtV3JD7RiV6cP7JcqAwVdUq6hWUtvDIoCOxPoeUWYf79nEF4WiYsPXVF0+meLLWKlL1fuSwEEt1CEHEG5w==
+  version "2.26.2"
   dependencies:
     "@apollographql/graphql-playground-html" "1.6.26"
     "@types/accepts" "^1.3.5"
